@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konversi Nilai</title>
+</head>
+
+<body>
+
+<h2>Program Konversi Nilai Angka ke Huruf</h2>
+
+<script>
+
+let nilai = prompt("Masukkan nilai 0 - 100");
+
+nilai = parseInt(nilai);
+
+if (nilai >= 80 && nilai <= 100) {
+    document.body.innerHTML += "<h1>Nilai Huruf : A</h1>";
+}
+else if (nilai >= 65) {
+    document.body.innerHTML += "<h1>Nilai Huruf : B</h1>";
+}
+else if (nilai >= 40) {
+    document.body.innerHTML += "<h1>Nilai Huruf : C</h1>";
+}
+else if (nilai >= 21) {
+    document.body.innerHTML += "<h1>Nilai Huruf : D</h1>";
+}
+else if (nilai >= 0) {
+    document.body.innerHTML += "<h1>Nilai Huruf : E</h1>";
+}
+else {
+    document.body.innerHTML += "<h1>Nilai tidak valid</h1>";
+}
+
+</script>
+
+</body>
+</html>

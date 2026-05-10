@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header */
+.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Container row */
+.row {
+  display: flex;
+}
+
+/* Kolom */
+.column {
+  flex: 33.33%;
+  padding: 20px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+/* Warna tiap box */
+.left {
+  background-color: #f4cccc;
+}
+
+.middle {
+  background-color: #c9daf8;
+}
+
+.right {
+  background-color: #d9ead3;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <h1>HEADER</h1>
+</div>
+
+<!-- Baris Pertama -->
+<div class="row">
+  <div class="column left">
+    <h2>Kolom 1</h2>
+    <p>Isi informasi sidebar kiri.</p>
+  </div>
+
+  <div class="column middle">
+    <h2>Kolom 2</h2>
+    <p>Isi konten utama website.</p>
+  </div>
+
+  <div class="column right">
+    <h2>Kolom 3</h2>
+    <p>Isi informasi tambahan.</p>
+  </div>
+</div>
+
+<!-- Baris Kedua -->
+<div class="row">
+  <div class="column left">
+    <h2>Box 4</h2>
+    <p>Informasi tambahan baris kedua.</p>
+  </div>
+
+  <div class="column middle">
+    <h2>Box 5</h2>
+    <p>Konten galeri atau artikel.</p>
+  </div>
+
+  <div class="column right">
+    <h2>Box 6</h2>
+    <p>Kontak atau informasi lainnya.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>FOOTER</h2>
+</div>
+
+</body>
+</html>
